@@ -33,6 +33,7 @@ public class Commandinvsee extends EssentialsCommand {
             inv = server.createInventory(invUser.getBase(), 9, user.playerTl("equipped"));
             inv.setContents(invUser.getBase().getInventory().getArmorContents());
             if (VersionUtil.getServerBukkitVersion().isHigherThanOrEqualTo(VersionUtil.v1_9_4_R01)) {
+                inv.setItem(4, invUser.getBase().getInventory().getItemInOffHand());
             }
         } else {
             ItemStack[] content = invUser.getBase().getInventory().getContents();
