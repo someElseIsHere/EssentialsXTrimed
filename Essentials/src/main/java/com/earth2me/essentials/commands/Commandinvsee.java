@@ -4,6 +4,7 @@ import com.earth2me.essentials.User;
 import com.earth2me.essentials.utils.VersionUtil;
 import org.bukkit.Server;
 import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.ItemStack;
 
 import java.util.Collections;
 import java.util.List;
@@ -32,10 +33,14 @@ public class Commandinvsee extends EssentialsCommand {
             inv = server.createInventory(invUser.getBase(), 9, user.playerTl("equipped"));
             inv.setContents(invUser.getBase().getInventory().getArmorContents());
             if (VersionUtil.getServerBukkitVersion().isHigherThanOrEqualTo(VersionUtil.v1_9_4_R01)) {
-                inv.setItem(4, invUser.getBase().getInventory().getItemInOffHand());
             }
         } else {
-            inv = invUser.getBase().getInventory();
+            ItemStack[] content = invUser.getBase().getInventory().getContents();
+            if (content.length > 27) {
+                inv = server.createInventory(invUser.getBase(), 54);
+                inv.setContents(invUser.getBase().getInventory().getContents());
+            }
+            else inv = invUser.getBase().getInventory();
         }
         user.getBase().closeInventory();
         user.getBase().openInventory(inv);
