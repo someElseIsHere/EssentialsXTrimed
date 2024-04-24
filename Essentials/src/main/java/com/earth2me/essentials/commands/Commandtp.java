@@ -1,4 +1,6 @@
+/*
 package com.earth2me.essentials.commands;
+
 
 import com.earth2me.essentials.CommandSource;
 import com.earth2me.essentials.Console;
@@ -163,3 +165,4 @@ public class Commandtp extends EssentialsCommand {
         }
     }
 }
+ */

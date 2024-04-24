@@ -1,3 +1,4 @@
+/*
 package com.earth2me.essentials.commands;
 
 import com.earth2me.essentials.CommandSource;
@@ -116,3 +117,4 @@ public class Commandgive extends EssentialsLoopCommand {
 
     }
 }
+*/

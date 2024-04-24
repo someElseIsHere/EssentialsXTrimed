@@ -180,10 +180,10 @@ commands:
     description: Get your current coordinates or those of a player.
     usage: /<command> [player]
     aliases: [coords,egetpos,position,eposition,whereami,ewhereami,getlocation,egetlocation,getloc,egetloc]
-  give:
-    description: Give a player an item.
-    usage: /<command> <player> <item|numeric> [amount [itemmeta...]]
-    aliases: [egive]
+# give:
+#   description: Give a player an item.
+#   usage: /<command> <player> <item|numeric> [amount [itemmeta...]]
+#   aliases: [egive]
   god:
     description: Enables your godly powers.
     usage: /<command> [player] [on|off]
@@ -504,10 +504,10 @@ commands:
     description: Teleport to the highest block at your current position.
     usage: /<command>
     aliases: [etop]
-  tp:
-    description: Teleport to a player.
-    usage: /<command> <player> [otherplayer]
-    aliases: [tele,etele,teleport,eteleport,etp,tp2p,etp2p]
+# tp:
+#   description: Teleport to a player.
+#   usage: /<command> <player> [otherplayer]
+#   aliases: [tele,etele,teleport,eteleport,etp,tp2p,etp2p]
   tpa:
     description: Request to teleport to the specified player.
     usage: /<command> <player>
